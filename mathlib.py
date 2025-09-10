@@ -19,7 +19,7 @@ def factorial(n: int) -> int:
     resultado = 1
     for i in range(1, n + 1):
         resultado *= i
-    return 1
+    return resultado
 
 
 def is_prime(n: int) -> bool:
