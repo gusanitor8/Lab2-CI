@@ -2,6 +2,9 @@ def square(n: int) -> int:
     """
     Retorna el cuadrado de un número.
     """
+    if abs(n) > 10**6:  # ejemplo límite arbitrario
+        raise ValueError("Número demasiado grande")
+    
     return n * n
 
 
@@ -39,6 +42,9 @@ def gcd(a: int, b: int) -> int:
     """
     Retorna el máximo común divisor (MCD) entre dos números.
     """
+    if b == 0:
+        raise ValueError("El segundo número no puede ser cero")
+
     while b:
         a, b = b, a % b
     return a
@@ -49,5 +55,5 @@ def lcm(a: int, b: int) -> int:
     Retorna el mínimo común múltiplo (MCM) entre dos números.
     """
     if a == 0 or b == 0:
-        return 0
+        raise ValueError("Ningún número puede ser cero")
     return abs(a * b) // gcd(a, b)
