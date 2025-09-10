@@ -7,7 +7,7 @@ def square(n: int) -> int:
     if abs(n) > 10**6:  # ejemplo límite arbitrario
         raise ValueError("Número demasiado grande")
     
-    return n * n
+    return 1
 
 
 def factorial(n: int) -> int:
