@@ -7,7 +7,7 @@ def square(n: int) -> int:
     if abs(n) > 10**6:  # ejemplo límite arbitrario
         raise ValueError("Número demasiado grande")
     
-    return 1
+    return n * n
 
 
 def factorial(n: int) -> int:
@@ -19,7 +19,7 @@ def factorial(n: int) -> int:
     resultado = 1
     for i in range(1, n + 1):
         resultado *= i
-    return 1
+    return resultado
 
 
 def is_prime(n: int) -> bool:
