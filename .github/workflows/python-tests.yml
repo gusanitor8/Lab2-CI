@@ -8,6 +8,8 @@ on:
 
 jobs:
   test:
+    name: python test
+    
     runs-on: ubuntu-latest
 
     steps:
